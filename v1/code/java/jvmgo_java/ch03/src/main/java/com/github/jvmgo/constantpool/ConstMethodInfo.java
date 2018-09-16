@@ -16,7 +16,9 @@ public class ConstMethodInfo implements ConstantInfo{
 
 	@Override
 	public String getValue() {
-		return this.constPool.getUTF8(this.classIndex) + "." + this.constPool.getUTF8(this.nameAndTypeIndex);
+		return this.constPool.getUTF8(this.classIndex) 
+				+ "." 
+				+ this.constPool.getUTF8(this.nameAndTypeIndex);
 	}
 	
 }
