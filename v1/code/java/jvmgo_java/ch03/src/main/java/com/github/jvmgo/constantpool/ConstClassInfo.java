@@ -1,4 +1,4 @@
-package com.github.jvmgo.constantPool;
+package com.github.jvmgo.constantpool;
 
 import com.github.jvmgo.clazz.ClassReader;
 
@@ -15,7 +15,5 @@ public class ConstClassInfo implements ConstantInfo{
 	public String getValue() {
 		return this.constPool.getUTF8(this.nameIndex);
 	}
-	
-
 	
 }

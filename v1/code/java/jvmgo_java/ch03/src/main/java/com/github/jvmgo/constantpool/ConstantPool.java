@@ -1,4 +1,4 @@
-package com.github.jvmgo.constantPool;
+package com.github.jvmgo.constantpool;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +30,6 @@ public class ConstantPool {
 	
 	public String getUTF8(int index) {
 		ConstantInfo constInfo = this.constantInfo.get(index);
-		return constInfo == null ? ""  :constInfo.toString();
+		return constInfo == null ? ""  :constInfo.getValue();
 	}
 }

@@ -1,4 +1,4 @@
-package com.github.jvmgo.constantPool;
+package com.github.jvmgo.constantpool;
 
 import com.github.jvmgo.clazz.ClassReader;
 

@@ -3,7 +3,7 @@ package com.github.jvmgo.clazz;
 import java.math.BigInteger;
 
 import com.github.jvmgo.Main;
-import com.github.jvmgo.constantPool.ConstantPool;
+import com.github.jvmgo.constantpool.ConstantPool;
 
 public class ClassFile {
 	private static Long CAFEBABE = new BigInteger("cafebabe",16).longValue();
@@ -23,13 +23,6 @@ public class ClassFile {
 	public ClassFile(byte[] classData) {
 		reader = new ClassReader(classData);
 		this.init();
-//for test start
-for(byte b : classData) {
-	System.out.print(String.format("%02x",b)+",");
-}
-System.out.println();
-//for test end
-		
 	}
 	
 	
